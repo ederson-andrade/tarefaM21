@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Smash & Code Burger — Hambúrgueria Artesanal</title>
+
+    <link rel="stylesheet" href="styles/main.scss" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta name="description"
+        content="Hambúrgueria artesanal com smash burgers, acompanhamentos crocantes e molhos autorais. Delivery e reservas." />
+</head>
+
+<body>
+    <header class="hero">
+        <div class="container">
+            <img class="hero__logo" src="./images/logo.png" alt="Smash & Code Burger" />
+            <p class="hero__text">
+                a experiência burger mais insana da cidade começa em <span id="contador"></span>
+            </p>
+
+            <div class="info-bar">
+                <ul class="info-bar__infos">
+                    <li class="info-bar__infos__item">
+                        <b>localização</b>
+                        caxias do sul — rs
+                    </li>
+                    <li class="info-bar__infos__item">
+                        <b>ticket médio</b>
+                        a partir de R$ 29,90
+                    </li>
+                    <li class="info-bar__infos__item">
+                        <b>horário</b>
+                        seg–dom • 18h às 23h
+                    </li>
+                </ul>
+                <a href="#pedido" class="button button--primary">faça seu pedido</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="event event--frontend event--image-left" id="burgers">
+        <div class="container">
+            <div class="event__details">
+                <h2 class="event__details__title">smash burgers</h2>
+                <p class="event__details__description">
+                    Discos finos, crosta perfeita (Maillard na veia) e blend autoral. Sem firula, só performance
+                    gastronômica.
+                </p>
+                <ul class="event__details__description">
+                    <li><b>Classic Smash:</b> 2x 80g, american cheese, picles, cebola, SCB sauce.</li>
+                    <li><b>Bacon Overdrive:</b> 2x 100g, cheddar duplo, bacon crocante, bbq house.</li>
+                    <li><b>Truffle Byte:</b> 1x 150g, queijo gruyère, maionese de trufa, rúcula.</li>
+                </ul>
+            </div>
+            <img class="event__image" src="./images/burger.png" alt="Smash burgers artesanais"
+                data-aos="fade-right" />
+        </div>
+    </section>
+
+    <section class="event event--ux-ui" id="sides">
+        <div class="container">
+            <div class="event__details">
+                <h2 class="event__details__title">acompanhamentos</h2>
+                <p class="event__details__description">
+                    Crocância nível sênior. Batatas selecionadas, onion rings calibradas e aquele sal na medida.
+                </p>
+                <ul class="event__details__description">
+                    <li><b>Fritas Clássicas:</b> corte fino, sal gourmet.</li>
+                    <li><b>Loaded Fries:</b> cheddar cremoso, bacon, cebolinha.</li>
+                    <li><b>Onion Rings:</b> empanamento leve, dip de páprica.</li>
+                </ul>
+            </div>
+            <img class="event__image" src="images/batatas.png" alt="Acompanhamentos crocantes"
+                data-aos="fade-left" />
+        </div>
+    </section>
+
+    <section class="event event--data-science event--image-left" id="combos">
+        <div class="container">
+            <div class="event__details">
+                <h2 class="event__details__title">molhos & combos</h2>
+                <p class="event__details__description">
+                    Stack de sabores proprietários para elevar o throughput do seu paladar.
+                </p>
+                <ul class="event__details__description">
+                    <li><b>SCB Sauce:</b> assinatura da casa, equilíbrio ácido-cremoso.</li>
+                    <li><b>Chipotle Mayo:</b> defumado na medida.</li>
+                    <li><b>Combo Dev:</b> burger + fritas + refri.</li>
+                    <li><b>Combo Sênior:</b> burger duplo + loaded fries + milk-shake.</li>
+                </ul>
+            </div>
+            <img class="event__image" src="images/combosenior.png" alt="Molhos autorais e combos"
+                data-aos="fade-right" />
+        </div>
+    </section>
+
+    <section class="event event--backend" id="pedido">
+        <div class="container">
+            <div class="event__details">
+                <h2 class="event__details__title">delivery & reservas</h2>
+                <p class="event__details__description">
+                    Foco em SLA: quente, rápido, consistente. Peça pelo app parceiro ou reserve sua mesa pelo WhatsApp.
+                </p>
+                <ul class="event__details__description">
+                    <li><b>Delivery:</b> iFood • Rappi • Retirada no balcão.</li>
+                    <li><b>Reservas:</b> WhatsApp (clique no botão abaixo).</li>
+                    <li><b>Endereço:</b> Rua da Codificação, 404 — Caxias do Sul/RS.</li>
+                </ul>
+            </div>
+            <img class="event__image" src="images/delivery.png" alt="Delivery e reservas" data-aos="fade-left" />
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type="module" src="scripts/main.js"></script>
+</body>
+
+</html>
